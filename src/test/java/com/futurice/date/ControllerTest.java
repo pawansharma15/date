@@ -24,7 +24,7 @@ class ControllerTest {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().string("{\"result\":3,\"error\":false}"));
+                .andExpect(content().string("{\"result\":1921,\"error\":false}"));
     }
 
     @Test
