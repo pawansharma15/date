@@ -7,13 +7,13 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ServiceTest {
+class DateServiceTest {
 
-    private Service service;
+    private DateService dateService;
 
     @BeforeEach
     void setup() {
-        service = new Service();
+        dateService = new DateService();
     }
 
     @Test
@@ -21,7 +21,7 @@ class ServiceTest {
         LocalDate dateOne = LocalDate.parse("2050-12-12");
         LocalDate dateTwo = LocalDate.parse("2050-12-10");
 
-        assertEquals(2, service.getDifference(dateOne, dateTwo));
+        assertEquals(2, dateService.getDifference(dateOne, dateTwo));
     }
 
     @Test
@@ -29,7 +29,7 @@ class ServiceTest {
         LocalDate dateOne = LocalDate.parse("2050-12-12");
         LocalDate dateTwo = LocalDate.parse("2050-11-12");
 
-        assertEquals(30, service.getDifference(dateOne, dateTwo));
+        assertEquals(30, dateService.getDifference(dateOne, dateTwo));
     }
 
     @Test
@@ -37,7 +37,7 @@ class ServiceTest {
         LocalDate dateOne = LocalDate.parse("2050-12-12");
         LocalDate dateTwo = LocalDate.parse("1000-11-12");
 
-        assertEquals(383535, service.getDifference(dateOne, dateTwo));
+        assertEquals(383535, dateService.getDifference(dateOne, dateTwo));
     }
 
     @Test
@@ -45,7 +45,7 @@ class ServiceTest {
         LocalDate dateOne = LocalDate.parse("2050-12-10");
         LocalDate dateTwo = LocalDate.parse("2050-12-15");
 
-        assertEquals(5, service.getDifference(dateOne, dateTwo));
+        assertEquals(5, dateService.getDifference(dateOne, dateTwo));
     }
 
     @Test
@@ -53,6 +53,6 @@ class ServiceTest {
         LocalDate dateOne = LocalDate.parse("2050-12-10");
         LocalDate dateTwo = LocalDate.parse("2050-12-10");
 
-        assertEquals(0, service.getDifference(dateOne, dateTwo));
+        assertEquals(0, dateService.getDifference(dateOne, dateTwo));
     }
 }

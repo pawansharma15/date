@@ -14,7 +14,7 @@ import java.time.LocalDate;
 @RestController
 public class Controller {
     @Autowired
-    Service service;
+    DateService dateService;
 
     @GetMapping(path="/difference", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<JSONObject> getDifference(@RequestParam(name = "date1", required=true)
@@ -23,7 +23,7 @@ public class Controller {
                                                     @RequestParam(name = "date2", required=true)
                                                     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
                                                     LocalDate dateTwo) {
-            Integer difference = service.getDifference(dateOne, dateTwo);
+            Integer difference = dateService.getDifference(dateOne, dateTwo);
             return ResponseEntity.ok().body(new View().createSuccessResponse(difference));
     }
 }
