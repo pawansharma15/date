@@ -41,6 +41,14 @@ class DateServiceTest {
     }
 
     @Test
+    void getDifference_whenMaxPossibleRange_returnPositiveDifference() {
+        LocalDate dateOne = LocalDate.parse("0001-01-01");
+        LocalDate dateTwo = LocalDate.parse("9999-12-31");
+
+        assertEquals(3652058, dateService.getDifference(dateOne, dateTwo));
+    }
+
+    @Test
     void getDifference_whenDateOneLessThanThanDate2_returnPositiveDifference() {
         LocalDate dateOne = LocalDate.parse("2050-12-10");
         LocalDate dateTwo = LocalDate.parse("2050-12-15");
