@@ -6,17 +6,25 @@ The range of the dates this application can take is
 Min - 0001-01-01
 Max - 9999-12-31
 
+```
 GET difference?date1=YYYY-MM-DD&date2=YYYY-MM-DD
 Host datedifference.herokuapp.com
+```
 
 Example
 ----
 https://datedifference.herokuapp.com/difference?date1=0001-01-01&date2=9999-12-31
 
-Response 
+Response <br/>
+```
 200 Ok
+```
+```
 content-type: application/json
+```
+```
 {
-  "result": 3652058,
+  "result": 3652058
   "error": false
 }
+```
