@@ -17,11 +17,7 @@ Host datedifference.herokuapp.com
 Successfull Response
 ```
 200 Ok
-```
-```
 content-type: application/json
-```
-```
 {
   "result": <Number of days as INT>
   "error": false
@@ -31,11 +27,7 @@ content-type: application/json
 Error Response
 ```
 xxx - <non 200 response code>
-```
-```
 content-type: application/json
-```
-```
 {
   "message": <ERROR MESSAGE>
   "error": true
@@ -49,11 +41,7 @@ https://datedifference.herokuapp.com/difference?date1=0001-01-01&date2=9999-12-3
 Response <br/>
 ```
 200 Ok
-```
-```
 content-type: application/json
-```
-```
 {
   "result": 3652058
   "error": false
