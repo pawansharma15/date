@@ -28,3 +28,21 @@ content-type: application/json
   "error": false
 }
 ```
+
+Various Responses
+---
+If the date provided is not in IOS format ot would return 400 bad request 
+```
+400
+```
+```
+{
+  "error": true,
+  "message": "Please provide date as YYYY-MM-DD"
+}
+```
+Other various standart HTTP response and status is also supported.
+
+Limitation
+---
+this app is build using Java Spring Boot and handles all errors and exception within the Spring framework. But it does not handle the errors and exceptions of the webserver. If the request is blocked or failed by the webserver then the response would not be in JSOn but would be a static HTML page.
