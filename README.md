@@ -45,4 +45,4 @@ Other various standart HTTP response and status is also supported.
 
 Limitation
 ---
-this app is build using Java Spring Boot and handles all errors and exception within the Spring framework. But it does not handle the errors and exceptions of the webserver. If the request is blocked or failed by the webserver then the response would not be in JSOn but would be a static HTML page.
+This app is build using Java Spring Boot and handles all errors and exception within the Spring framework. But it does not handle the errors and exceptions of the webserver. If the request is blocked or failed by the webserver then the response would not be in JSOn but would be a static HTML page.
