@@ -30,7 +30,7 @@ content-type: application/json
 
 Error Response
 ```
-xxx
+xxx - <non 200 response code>
 ```
 ```
 content-type: application/json
