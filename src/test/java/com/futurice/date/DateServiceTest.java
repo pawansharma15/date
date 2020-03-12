@@ -31,6 +31,14 @@ class DateServiceTest {
 
         assertEquals(30, dateService.getDifference(dateOne, dateTwo));
     }
+    
+    @Test
+    void getDifference_whenOneYearGap_returnPositiveDifference() {
+        LocalDate dateOne = LocalDate.parse("2050-12-12");
+        LocalDate dateTwo = LocalDate.parse("2051-12-12");
+
+        assertEquals(365, dateService.getDifference(dateOne, dateTwo));
+    }
 
     @Test
     void getDifference_whenDatesFromDifferentYears_returnPositiveDifference() {
