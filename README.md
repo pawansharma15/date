@@ -53,8 +53,6 @@ Various Responses
 If the date provided is not in IOS format ot would return 400 bad request 
 ```
 400
-```
-```
 {
   "error": true,
   "message": "Please provide date as YYYY-MM-DD"
