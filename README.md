@@ -8,6 +8,7 @@ Max - 9999-12-31 <br/>
 
 Outside this range the application would return ```400 Bad Request```
 
+GET Request detials
 ```
 GET difference?date1=YYYY-MM-DD&date2=YYYY-MM-DD
 Host datedifference.herokuapp.com
