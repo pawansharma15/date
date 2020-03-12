@@ -50,8 +50,9 @@ content-type: application/json
 
 Various Responses
 ---
-If the date provided is not in IOS format ot would return 400 bad request 
+If the date provided is not in IOS format it would return with ```400 bad request```
 ```
+https://datedifference.herokuapp.com/difference?date1=0001-01-01&date2=9999-12-311111
 400
 {
   "error": true,
