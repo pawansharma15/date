@@ -14,6 +14,34 @@ GET difference?date1=YYYY-MM-DD&date2=YYYY-MM-DD
 Host datedifference.herokuapp.com
 ```
 
+Successfull Response
+```
+200 Ok
+```
+```
+content-type: application/json
+```
+```
+{
+  "result": <Number of days as INT>
+  "error": false
+}
+```
+
+Error Response
+```
+xxx
+```
+```
+content-type: application/json
+```
+```
+{
+  "message": <ERROR MESSAGE>
+  "error": true
+}
+```
+
 Example
 ----
 https://datedifference.herokuapp.com/difference?date1=0001-01-01&date2=9999-12-31
